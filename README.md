@@ -38,12 +38,12 @@ In order for you to use this program/files you need to clone this project
 2. Run `mvn install` this will install the dependencies and compile the classes
 
 3. Commandlist
-    * `getTotalUsers`
-    * `getTop10Mentioners`
-    * `getTop5Mentioned`
-    * `getTop10MostActive`
-    * `getTop5Happy`
-    * `getTop5Grumpy`
+    - `getTotalUsers`
+    - `getTop10Mentioners`
+    - `getTop5Mentioned`
+    - `getTop10MostActive`
+    - `getTop5Happy`
+    - `getTop5Grumpy`
 
  4. `mvn exec:java -Dexec.args="$command"` to run the different commands you simply need to pick a command from the      Commandlist and replace `$command`
  
