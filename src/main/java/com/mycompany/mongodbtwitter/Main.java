@@ -14,18 +14,27 @@ package com.mycompany.mongodbtwitter;
 public class Main {
     public static void main(String[] args) {
         DBLogic dbl = new DBLogic();
-        if("getTotalUsers".equals(args[0])){
-            System.out.println("Total amount of users: " + dbl.getTotalUsers());
-        }else if("getTop10Mentioners".equals(args[0])){
-            System.out.println("Top 10 Mentioners: " + dbl.getTop10Mentioners());
-        }else if("getTop5Mentioned".equals(args[0])){
-            System.out.println(dbl.getTop5Mentioned());
-        }else if("getTop10MostActive".equals(args[0])){
-            System.out.println(dbl.getTop10MostActive());
-        }else if("getTop5Happy".equals(args[0])){
-            System.out.println(dbl.getTop5Happy());
-        }else if("getTop5Grumpy".equals(args[0])){
-            System.out.println(dbl.getTop5Grumpy());
+        if(null != args[0])switch (args[0]) {
+            case "getTotalUsers":
+                System.out.println("Total amount of users: " + dbl.getTotalUsers());
+                break;
+            case "getTop10Mentioners":
+                System.out.println("Top 10 Mentioners: " + dbl.getTop10Mentioners());
+                break;
+            case "getTop5Mentioned":
+                System.out.println(dbl.getTop5Mentioned());
+                break;
+            case "getTop10MostActive":
+                System.out.println(dbl.getTop10MostActive());
+                break;
+            case "getTop5Happy":
+                System.out.println(dbl.getTop5Happy());
+                break;
+            case "getTop5Grumpy":
+                System.out.println(dbl.getTop5Grumpy());
+                break;
+            default:
+                break;
         }
     }
 }
